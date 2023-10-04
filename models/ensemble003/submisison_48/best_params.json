@@ -1,0 +1,14 @@
+[
+    {
+        "train_forecasting_models": false,
+        "show_warnings": true
+    },
+    {
+        "train_forecasting_models": false,
+        "show_warnings": true
+    },
+    {
+        "train_forecasting_models": false,
+        "show_warnings": true
+    }
+]

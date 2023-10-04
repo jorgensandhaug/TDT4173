@@ -1,0 +1,52 @@
+{
+    "EXOGENOUS": [
+        "estimated_diff_hours",
+        "absolute_humidity_2m:gm3",
+        "air_density_2m:kgm3",
+        "dew_point_2m:K",
+        "diffuse_rad_1h:J",
+        "direct_rad_1h:J",
+        "effective_cloud_cover:p",
+        "fresh_snow_1h:cm",
+        "snow_depth:cm",
+        "sun_elevation:d",
+        "sun_azimuth:d",
+        "t_1000hPa:K",
+        "visibility:m",
+        "wind_speed_10m:ms",
+        "is_dew",
+        "is_rime",
+        "y_is_nan",
+        "exog_is_nan",
+        "sin_sun_elevation",
+        "global_rad_1h:J"
+    ],
+    "one_model_for_all": false,
+    "is_single_gbtree_model": false,
+    "use_validation_set": false,
+    "train_val_split": {},
+    "use_gridsearch": false,
+    "forecast_horizon": 1536,
+    "stride": 1536,
+    "start": 0.5,
+    "model_name": "ensemble003",
+    "use_naive_ensemble": true,
+    "models_to_train": [
+        [
+            "xgb",
+            "catboost"
+        ],
+        [
+            "catboost",
+            "rforest"
+        ],
+        [
+            "xgb",
+            "catboost"
+        ]
+    ],
+    "fillna_value": -1,
+    "fillna_only_y": false,
+    "use_all_even_with_missing": false,
+    "predict_multivariate": false
+}

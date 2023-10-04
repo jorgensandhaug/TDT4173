@@ -1,0 +1,187 @@
+[
+    {
+        "train_forecasting_models": false,
+        "show_warnings": true,
+        "forecasting_models": [
+            {
+                "name": "XGBModel",
+                "lags": [
+                    -8760
+                ],
+                "lags_past_covariates": null,
+                "lags_future_covariates": [
+                    0
+                ],
+                "output_chunk_length": 1,
+                "add_encoders": {
+                    "datetime_attribute": {
+                        "future": [
+                            "hour",
+                            "month"
+                        ]
+                    }
+                },
+                "likelihood": null,
+                "quantiles": null,
+                "random_state": 42,
+                "multi_models": true,
+                "use_static_covariates": true,
+                "n_estimators": 500,
+                "max_depth": 6,
+                "learning_rate": 0.03,
+                "objective": "reg:absoluteerror",
+                "booster": "gbtree"
+            },
+            {
+                "name": "CatBoostModel",
+                "lags": [
+                    -8760
+                ],
+                "lags_past_covariates": null,
+                "lags_future_covariates": [
+                    0
+                ],
+                "output_chunk_length": 1,
+                "add_encoders": {
+                    "datetime_attribute": {
+                        "future": [
+                            "hour",
+                            "month"
+                        ]
+                    }
+                },
+                "likelihood": null,
+                "quantiles": null,
+                "random_state": 42,
+                "multi_models": true,
+                "use_static_covariates": true,
+                "n_estimators": 500,
+                "max_depth": 6,
+                "learning_rate": 0.03,
+                "objective": "MAE"
+            }
+        ]
+    },
+    {
+        "train_forecasting_models": false,
+        "show_warnings": true,
+        "forecasting_models": [
+            {
+                "name": "CatBoostModel",
+                "lags": [
+                    -8760
+                ],
+                "lags_past_covariates": null,
+                "lags_future_covariates": [
+                    0
+                ],
+                "output_chunk_length": 1,
+                "add_encoders": {
+                    "datetime_attribute": {
+                        "future": [
+                            "hour",
+                            "month"
+                        ]
+                    }
+                },
+                "likelihood": null,
+                "quantiles": null,
+                "random_state": 42,
+                "multi_models": true,
+                "use_static_covariates": true,
+                "n_estimators": 500,
+                "max_depth": 6,
+                "learning_rate": 0.03,
+                "objective": "MAE"
+            },
+            {
+                "name": "RandomForest",
+                "lags": [
+                    -8760
+                ],
+                "lags_past_covariates": null,
+                "lags_future_covariates": [
+                    0
+                ],
+                "output_chunk_length": 1,
+                "add_encoders": {
+                    "datetime_attribute": {
+                        "future": [
+                            "hour",
+                            "month"
+                        ]
+                    }
+                },
+                "n_estimators": 100,
+                "max_depth": null,
+                "multi_models": true,
+                "use_static_covariates": true,
+                "max_features": "sqrt",
+                "bootstrap": true
+            }
+        ]
+    },
+    {
+        "train_forecasting_models": false,
+        "show_warnings": true,
+        "forecasting_models": [
+            {
+                "name": "XGBModel",
+                "lags": [
+                    -8760
+                ],
+                "lags_past_covariates": null,
+                "lags_future_covariates": [
+                    0
+                ],
+                "output_chunk_length": 1,
+                "add_encoders": {
+                    "datetime_attribute": {
+                        "future": [
+                            "hour",
+                            "month"
+                        ]
+                    }
+                },
+                "likelihood": null,
+                "quantiles": null,
+                "random_state": 42,
+                "multi_models": true,
+                "use_static_covariates": true,
+                "n_estimators": 500,
+                "max_depth": 6,
+                "learning_rate": 0.03,
+                "objective": "reg:absoluteerror",
+                "booster": "gbtree"
+            },
+            {
+                "name": "CatBoostModel",
+                "lags": [
+                    -8760
+                ],
+                "lags_past_covariates": null,
+                "lags_future_covariates": [
+                    0
+                ],
+                "output_chunk_length": 1,
+                "add_encoders": {
+                    "datetime_attribute": {
+                        "future": [
+                            "hour",
+                            "month"
+                        ]
+                    }
+                },
+                "likelihood": null,
+                "quantiles": null,
+                "random_state": 42,
+                "multi_models": true,
+                "use_static_covariates": true,
+                "n_estimators": 500,
+                "max_depth": 6,
+                "learning_rate": 0.03,
+                "objective": "MAE"
+            }
+        ]
+    }
+]
