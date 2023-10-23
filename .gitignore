@@ -5,3 +5,4 @@ venv
 *.pkl*
 AutogluonModels/*
 winning*
+X_train_raw.csv
