@@ -4,3 +4,4 @@ venv
 *.zip
 *.pkl*
 AutogluonModels/*
+winning*
